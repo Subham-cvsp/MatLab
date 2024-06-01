@@ -1,0 +1,16 @@
+Aim:To perform union, intersection, complement operations of fuzzy set.
+
+S = [0.1,0.2,0.3,0.4];
+T = [0.2,0.6, 0.4, 0.7];
+w = min(S,T);
+x = max(S,T);
+y = 1-S;
+z = 1-T;
+disp("Union of Set S and T");
+disp(x);
+disp("Intersection of Set S and T");
+disp(w);
+disp("Compliment of first fuzzy set");
+disp(y);
+disp("Compliment of second fuzzy set");
+disp(z);
