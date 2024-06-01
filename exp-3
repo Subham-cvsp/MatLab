@@ -1,0 +1,13 @@
+Aim: To use fuzzy toolbox to model tips value that is given after a dinner based on quality (not good, satisfying, good and delightful) and service (poor, average or good) and the tip. 
+
+Algorithm:
+1. Open Fuzzy Logic Designer: Use the command `fuzzy` in the MATLAB command window to open the Fuzzy Logic Designer. 
+2. Design Input/Output Variables: Add input variables (e.g., Quality, Service) and an output variable (e.g., Tip) in the Fuzzy Logic Designer. 
+3. Set Variable Ranges: Define the ranges for the input and output variables (e.g., Quality: [0, 10], Service: [0, 10], Tip: [10, 100]). 
+4. Design Membership Functions: For each input variable: 
+      • Define membership functions (MFs) with appropriate types (e.g. trapmf, trimf). 
+      • Specify parameters for each MF according to the provided table or requirements. 
+5. Add Rules: Go to the Rules section in the Fuzzy Logic Designer. Edit and add rules based on the input-output relationships and the fuzzy logic system's logic. 
+6. View Rules: Check and verify the rules you've added to ensure they reflect the desired behavior of the system. 
+7. Exit Fuzzy Logic Designer: Close the Fuzzy Logic Designer once you've completed the design and verification of the fuzzy inference system.
+
