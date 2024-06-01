@@ -1,0 +1,9 @@
+Aim:To find the weight matrix of an auto associative net to store the vector (1 1 -1 -1). Test the response of the network by presenting the 
+same pattern and recognize whether it is a known vector or unknown vector.
+
+
+A = [1 1 -1 -1];
+W = [0 0 0 0;0 0 0 0;0 0 0 0;0 0 0 0];
+b = transpose(A);
+W = b*A;
+disp(W);
