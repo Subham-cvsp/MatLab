@@ -1,0 +1,15 @@
+Aim:To train and test the back propagation neural network for the generation of XOR function.
+
+x = [0 0 1 1; 0 1 0 1];
+y = [0 1 1 0];
+net = newff([0 1; 0 1], [2 1], {'logsig', 'logsig'}, 'traingd');
+net.trainParam.epochs = 10000; 
+net.trainParam.lr = 0.1; 
+net = train(net, x, y);
+output = sim(net, x);
+disp('Input:');
+disp(x);
+disp('Target Output:');
+disp(y);
+disp('Predicted Output:');
+disp(output);
