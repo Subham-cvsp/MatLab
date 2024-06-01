@@ -1,0 +1,18 @@
+Aim:Using Hebb Net to classify two-dimensional input patterns in bipolar with given targets.
+
+i = [1 1 1 -1 1 -1 1 1 1];
+o = [1 1 1 1 -1 1 1 1 1];
+wOld = [0 0 0 0 0 0 0 0 0];
+wNew = [0 0 0 0 0 0 0 0 0];
+YI = 1;
+YO = -1;
+for j=1:9
+ wNew(j) = wOld(j) + i(j)*YI;
+end
+disp(" New values of I = ");
+disp(wNew);
+for k= 1:9
+wNew(k) = wNew(k) + o(k)*YO;
+end
+disp("New Values of O: ")
+disp(wNew)
