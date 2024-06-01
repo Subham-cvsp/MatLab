@@ -1,0 +1,17 @@
+Aim:To plot triangular, trapezoidal, bell shaped membership functions.
+
+
+%Triangular Membership Function
+A = [ 1:0.1:10];
+B = trimf(A, [2 6 10]);
+plot(A,B);
+ 
+%Trapezodial Membership Function
+A = [ 1:0.1:10];
+ C = trapmf(A, [2 5 7 9]);
+plot(A,C)
+
+%Bell Shaped Membership Function
+A = [ 1:0.1:10];
+D = gbellmf(A, [3 6 9]);
+plot(A,D)
