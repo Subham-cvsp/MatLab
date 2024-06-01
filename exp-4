@@ -1,0 +1,28 @@
+Aim:To implement a Fuzzy Inference System (FIS) for which the inputs, outputs and rules are given.
+
+For given inputs, outputs, and rules, create FIS.
+Inputs: Temperature and Cloud Cover 
+        Temperature: {Freeze, Cool, Warm and Hot} 
+        Cloud Cover: {Sunny, Partly Cloud and Overcast} 
+ 
+Output: Speed 
+        Speed: {Fast and Slow} 
+ 
+Rules: 
+1. If cloud cover is Sunny and temperature is warm, then drive Fast Sunny (Cover) and Warm (Temp) -> Fast (Speed) 
+2. If cloud cover is cloudy and temperature is cool, then drive Slow Cloudy (Cover) and Cool (Temp) -> Slow (Speed)
+
+
+Algorithm:
+1. Go to command window in Matlab and type fuzzy. 
+2. Now, new Fuzzy Logic Designer window will be opened. 
+3. Input / Output Variable 
+    o Go to Edit Window and click Add variable. 
+    o As per our requirements create two input variables, Temperature and Cloud Cover. 
+    o Create one output variable, Speed. 
+4. Goto Rules: Edit Rules 
+5. Add the Rules: 
+   Rule-1: Sunny (Cover) and Warm (Temp) -> Fast (Speed) 
+   Rule-2: Cloudy (Cover) and Cool (Temp) -> Slow (Speed) 
+6. Go to view Rules 
+7. Exit.
