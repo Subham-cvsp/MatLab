@@ -1,0 +1,13 @@
+Aim:To calculate the weights using Hetero-associative neural net for mapping of vectors
+
+s1 = [1 0 1 0];
+s2 = [1 0 0 1];
+s3 = [1 1 0 0];
+s4 = [0 0 1 1];
+t1 = [1 0];
+t2 = [1 0];
+t3 = [0 1];
+t4 = [0 1];
+w = [0 0;0 0;0 0;0 0];
+w = transpose(s1)*t1 + transpose(s2)*t2 +transpose(s3)*t3 + transpose(s4)*t4;
+disp(w);
